@@ -7,16 +7,16 @@ terraform {
   }
 
   backend "s3" {
-    bucket  = "rocketseat-iac-cursodocker"
-    key     = "state/terraform.tfstate"
-    region  = "us-east-2"
+    bucket = "rocketseat-iac-cursodocker"
+    key    = "state/terraform.tfstate"
+    region = "us-east-2"
     # profile = "AdministratorAccess-651706743475"
 
   }
 }
 
 provider "aws" {
-  region  = "us-east-2"
+  region = "us-east-2"
   # profile = "AdministratorAccess-651706743475"
 }
 
